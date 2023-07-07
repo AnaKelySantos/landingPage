@@ -76,7 +76,7 @@ color: #ffc506;
 }
 
 .first-section{
-    height: 48vw;
+    height: 100vw;
     width: 100vw;
     background-image:linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(./img/fundopizza.jpg);
     background-position: center center;
@@ -328,4 +328,72 @@ footer{
     align-items: center;
     justify-content: center;
 
+}
+
+@media (max-width: 2000px){
+    .first-section{
+        height: 50vw;
+    }    
+}
+
+@media (max-width: 1309px){
+    .first-section{
+        height: 70vw;
+    }    
+}
+
+@media (max-width: 1200px) {
+    .main{
+        display: block;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .sobre-nos img{
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+
+@media (max-width: 992px) {
+    html{
+      
+        font-size: 50%;
+        
+    }
+    .contatos-secao {
+        width: 340px;
+        
+    }
+}
+
+@media (max-width: 768px){
+    html{
+      
+        font-size: 50%;
+        
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    .itens-cardapio .info h4{
+        margin-left: 12rem;
+    }
+    .contatos-secao {
+        width: 340px;
+        
+    }
+    
+    .content .list-menu{
+        display: none;
+    }
 }
