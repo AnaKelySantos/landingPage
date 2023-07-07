@@ -299,7 +299,7 @@ justify-content: center;
 }
 
 .contatos-secao {
-    width: 650px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
