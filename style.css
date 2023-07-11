@@ -453,16 +453,88 @@ footer{
     .content.on .menu-toggle .two{
         display: none;
     }
-    .content.on .menu-toggle .one{
-        transform: rotate(45deg) translate(5px, -8px);
-    }
-    .content.on .menu-toggle .three{
-        transform: rotate(-45deg) translate(5px, -8px);
-    }
+    .content.on .menu-toggle .one {
+        transform: rotate(240deg) translate(0, -8px);
+      }
+      
+      .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(0, -8px);
+      }
+      
 
     .itens-cardapio .info h4{
         margin-left: 12rem;
     }
     
+    .contatos-secao{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
 
 }
+
+@media(max-width: 600px){
+    .conteudo-principal h1{
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .conteudo-principal h2{
+        font-size: 2rem;
+    }
+
+    .itens-cardapio{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+    .sobre-nos img{
+        width: 400px;
+        height: 250px;
+        margin: 50px;
+        align-items: center;
+    }
+    .sobre-nos p{
+        text-align: center;
+        width: 400px;
+
+    }
+    .contatos-secao{
+        width: 300px;
+        
+    }
+}
+
+
+@media(max-width: 500px){
+
+    .btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        
+    }
+
+    .btn button{
+        font-size: 1.5rem;
+        width: 100%;
+
+    }
+
+    .first-section{
+        height: 100vw;
+    }
+}
+
+@media(max-width: 500px){
+
+    .conteudo-principal h1{
+        
+        font-size: 3rem;
+        text-align: center;
+    }
+
+}
+
